@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/drag.png</file>
+        <file>resources/chopper_icon.png</file>
+    </qresource>
+</RCC>

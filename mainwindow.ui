@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>479</width>
+    <height>325</height>
+   </size>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/chopper_icon.png</normaloff>:/resources/chopper_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>479</width>
+     <height>325</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <widget class="DropWidget" name="dropWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>479</width>
+      <height>325</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>479</width>
+      <height>325</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>479</width>
+      <height>325</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {background-image: url(&quot;:/resources/drag.png&quot;) }</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DropWidget</class>
+   <extends>QFrame</extends>
+   <header>dropwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
